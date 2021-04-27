@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@500&family=Redressed&display=swap");
+/* line 1, ../../../Nueva carpeta/Clase 12/scss/_fuentes.scss */
+.font-title {
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 700;
+}
+
+/* line 5, ../../../Nueva carpeta/Clase 12/scss/_fuentes.scss */
+.font-medium {
+  font-family: "Redressed", sans-serif;
+  font-weight: 500;
+}
+
+/* line 10, ../../../Nueva carpeta/Clase 12/scss/_fuentes.scss */
+.font-small {
+  font-family: "Redressed", sans-serif;
+  font-weight: 400;
+}
+
+/* line 14, ../../../Nueva carpeta/Clase 12/scss/_fuentes.scss */
+.font-large {
+  font-family: "Redressed", sans-serif;
+  font-weight: 700;
+}
+
+/* line 18, ../../../Nueva carpeta/Clase 12/scss/_fuentes.scss */
+.biografia-titulo {
+  text-align: center;
+  font-family: "Cormorant Unicase", serif;
+  font-weight: 700;
+}
+
+/* line 23, ../../../Nueva carpeta/Clase 12/scss/_fuentes.scss */
+.biografia-texto {
+  text-align: center;
+  font-family: "Redressed", sans-serif;
+  font-weight: 400;
+}
+
+/* line 1, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* line 6, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+.font-medium a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* line 13, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+.font-large a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+}
+
+/* line 19, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+.size-medium {
+  font-size: 2rem;
+}
+
+/* line 22, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+.size-small {
+  font-size: 20px;
+}
+
+/* line 26, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+.imagenes {
+  width: 80%;
+}
+
+/* line 37, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+.banner {
+  padding: 20px 80px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  width: 80%;
+  height: 450px;
+}
+
+/* line 46, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+.imagenFondo1 {
+  width: 33%;
+  background-image: url("../Multimedia/valeria1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 50, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+.imagenFondo2 {
+  width: 33%;
+  background-image: url("../Multimedia/valeria2.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 54, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+.imagenFondo3 {
+  width: 33%;
+  background-image: url("../Multimedia/valeria5.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 58, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+.galleria {
+  display: flex;
+  height: 120vh;
+  margin: auto;
+  flex-wrap: wrap;
+  align-content: space-between;
+  overflow: auto;
+}
+
+/* line 66, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+.foto {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  border: #750303 solid 2px;
+}
+
+/* line 73, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+footer {
+  background-color: #000;
+  height: 200px;
+  width: 100%;
+  border-top: solid 3px #800303;
+}
+
+/* line 79, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+footer h5 {
+  font-size: 50px;
+}
+
+/* line 83, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+footer .facebook {
+  color: #800303;
+  background-color: #000;
+  font-size: 60px;
+}
+
+/* line 89, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+.lyrics {
+  height: 600px;
+  width: 800px;
+}
+
+/* line 94, ../../../Nueva carpeta/Clase 12/scss/_main.scss */
+.borde {
+  border-bottom: solid 3px #800303;
+}
+
+/*# sourceMappingURL=estilos.css.map */

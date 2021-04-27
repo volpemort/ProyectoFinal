@@ -1,0 +1,98 @@
+body{
+    background-color:$bgNegro;
+    color:$blanco ;
+}
+.font-medium {
+    a   {
+    text-decoration: none;
+    color:$blanco ;
+    font-size: 20px;
+    }
+}
+.font-large{
+    a   {
+    text-decoration: none;
+    color:$blanco ;
+    font-size: 25px;
+    }
+}
+.size-medium{
+    font-size: 2rem;
+}
+.size-small{
+    font-size: 20px;
+}
+
+.imagenes{
+    width: 80%;
+}
+
+@mixin banner($imagen){
+    width: 33%;
+    background-image: $imagen;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner{
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: row;
+    align-content:center;
+    width: 80%;
+    height: 450px;
+}
+    
+.imagenFondo1{
+    @include banner($imageBanner1)
+    
+}
+.imagenFondo2{
+    @include banner($imageBanner2)
+    
+}
+.imagenFondo3{
+    @include banner($imageBanner3)
+    
+}
+.galleria{
+    display: flex;
+    height: 120vh ;
+    margin: auto;
+    flex-wrap: wrap;
+    align-content:space-between;
+    overflow:auto ;
+}
+.foto{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    border: rgb(117, 3, 3) solid 2px;
+    
+}
+footer{
+    background-color: $negro;
+    height: 200px;
+    width: 100%;
+    border-top: $borde;
+
+    h5{
+        font-size: 50px;
+    }
+    
+    .facebook{
+        color:rgb(128, 3, 3);
+        background-color: $negro;
+        font-size: 60px;
+    }
+}
+.lyrics{
+    height: 600px;
+    width: 800px;
+}
+
+.borde{
+    border-bottom: $borde;
+}
+
+
