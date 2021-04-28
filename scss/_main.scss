@@ -57,10 +57,8 @@ body{
 }
 .galleria{
     display: flex;
-    height: 120vh ;
     margin: auto;
     flex-wrap: wrap;
-    align-content:space-between;
     overflow:auto ;
 }
 .foto{
