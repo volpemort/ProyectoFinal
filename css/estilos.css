@@ -114,7 +114,6 @@ body {
   display: flex;
   margin: auto;
   flex-wrap: wrap;
-  overflow: auto;
 }
 
 /* line 64, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
@@ -123,9 +122,10 @@ body {
   height: 300px;
   margin: 20px;
   border: #750303 solid 2px;
+  overflow: hidden;
 }
 
-/* line 71, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 72, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 footer {
   background-color: #000;
   height: 200px;
@@ -133,25 +133,25 @@ footer {
   border-top: solid 3px #800303;
 }
 
-/* line 77, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 78, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 footer h5 {
   font-size: 50px;
 }
 
-/* line 81, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 82, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 footer .facebook {
   color: #800303;
   background-color: #000;
   font-size: 60px;
 }
 
-/* line 87, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 88, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .lyrics {
   height: 600px;
   width: 800px;
 }
 
-/* line 92, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 93, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .borde {
   border-bottom: solid 3px #800303;
 }
