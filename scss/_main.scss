@@ -4,17 +4,11 @@ body{
 }
 .font-medium {
     a   {
-    text-decoration: none;
-    color:$blanco ;
-    font-size: 20px;
-    }
-}
-.font-large{
-    a   {
-    text-decoration: none;
-    color:$blanco ;
     font-size: 25px;
     }
+}
+.navbar-brand{
+    font-size: 55px;
 }
 .size-medium{
     font-size: 2rem;
@@ -23,10 +17,37 @@ body{
     font-size: 20px;
 }
 
-.imagenes{
-    width: 80%;
+.colorPrimario{
+    color: $primario;
 }
 
+.colorSecundario{
+    color: $secundario;
+}
+
+.colorTerciario{
+    color:$terciario;
+}
+
+.bgPrimario{
+    background-color: $primario;
+}
+
+#navColor{
+    background-color:$primario;
+        a{
+            color: $secundario;
+            background-color: $primario;
+        }
+    
+}
+.dropdown-menu{
+    background-color: $bgNegro;
+    a{
+    color: $blanco;
+    background-color: $bgNegro;
+}
+}
 @mixin banner($imagen){
     width: 33%;
     background-image: $imagen;
@@ -65,12 +86,11 @@ body{
     width: 300px;
     height: 300px;
     margin: 20px;
-    border: rgb(117, 3, 3) solid 2px;
+    border:$borde;
     overflow: hidden;
     
 }
 footer{
-    background-color: $negro;
     height: 200px;
     width: 100%;
     border-top: $borde;
@@ -80,8 +100,8 @@ footer{
     }
     
     .facebook{
-        color:rgb(128, 3, 3);
-        background-color: $negro;
+        color: $secundario;
+        background-color: transparent;
         font-size: 60px;
     }
 }
@@ -92,6 +112,76 @@ footer{
 
 .borde{
     border-bottom: $borde;
+    
+}
+#bannerValeria{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img{
+        width: 30%;
+        height: 30vh;;
+    } 
+}
+#bandCamp{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    #bandButton{
+        height: 5vh;
+        color: $negro;
+        background-color: $secundario;
+        
+    }
 }
 
+#contactBox{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
 
+    .leftBox{
+        width: 30%;
+        height: 600px;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 80%;
+        }
+    }
+
+    .rightBox{
+        width: 30%;
+        height: 600px;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 80%;
+            
+        }
+    }
+
+    #formBox{
+        width: 40%;
+        height: 600px;
+        margin-top: 2rem;
+        h1{
+            margin-bottom: 2rem;
+        }
+        p{
+            margin-bottom: 2rem;
+        }
+    }
+
+}

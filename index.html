@@ -11,32 +11,49 @@
 </head>
 <body>
     <header>
-        <nav class="navegador container-fluid row ml-0 pl-0">
-            <div class="font-title  col-12 col-sm-12 col-md-12 col-xl-2  my-2">
-                <h1>Circular</h1>
+        <nav id="navColor" class="navbar navbar-expand-lg navbar-dark">
+            <a class="font-title navbar-brand col-2" href="index.html">Circular</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="font-medium collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class=" nav-link mr-5 ml-3" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item mr-5">
+                        <a class="nav-link" href="arte.html">Artes Plasticas</a>
+                    </li>
+                    <li id="navColor" class="nav-item dropdown mr-5">
+                        <a class="nav-link dropdown-toggle" href="arte.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Artes-Visuales
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item " href="trabajos.html">Fotografia</a>
+                            <a class="dropdown-item " href="diseno.html">Diseno Grafico</a>
+                        </div>
+                    </li>
+                    
+                </ul>
             </div>
-            
-                <div class="font-medium col-3 col-xl-2 col-2 col-sm-4 col-md-2 mt-4"><a href="index.html">Home</a></div>
-                <div class="font-medium col-3 col-xl-2 col-2 col-sm-4 col-md-2 mt-4"><a href="contacto.html">Contacto</a></div>
-                <div class="font-medium col-3 col-xl-2 col-2 col-sm-4 col-md-2 mt-4"><a href="arte.html">Artes Plasticas </a></div>
-                <div class="font-medium  col-6 col-xl-2  col-sm-6 col-md-2 mt-4 pl-5"><a href="trabajos.html">Fotografia</a></div>
-                <div class="font-medium  col-6 col-xl-2  col-sm-6 col-md-2 mt-4 pl-5"><a href="diseno.html">Diseño Grafico</a></div>
-            
         </nav>
-        <div id="carouselExampleIndicators" class=" imagenes container carousel slide mt-3" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="container carousel slide mt-3" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item">
                 <img src="Multimedia/foto1.jpg" class="d-block w-100" alt="moto">
             </div>
             <div class="carousel-item">
                 <img src="Multimedia/foto2.jpg" class="d-block w-100" alt="moto2">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item active">
                 <img src="Multimedia/foto3.jpg" class="d-block w-100" alt="moto3">
             </div>
         </div>
@@ -52,51 +69,36 @@
         
     </header>
         <div class="container mt-5 borde pb-5">
-            <h1 class="biografia-titulo">
+            <h1 class="biografia-titulo colorTerciario">
                 Circular Artes-Visuales
             </h1>
-            <p class="size-medium biografia-texto"> 
+            <p class="size-medium biografia-texto colorSecundario"> 
                 Cera Circular es un conjunto de diversas ramas del arte. Un abanico de disciplinas que van desde lo gráfico, lo plástico, el dibujo y lo cerámico.
                 Estos son algunos de los trabajos realizados a lo largo de varios años, algunos hechos a pedido, otros formaron parte de mi educación artística y otros hechos por puro placer.
             </p>
         </div>
-    <div class=" container mt-5 borde">
+    <div class="container my-5 borde">
         
-        <h2 class="biografia-titulo pb-5">
-            BIOGRAFIA
+        <h2 class="biografia-titulo pb-5 colorTerciario">
+            Valeria Manganoro
         </h2>
-        <p class=" size-small biografia-texto"> 
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Nulla similique vitae ut hic saepe a dolorum perferendis, totam non aspernatur, 
-            praesentium architecto! Voluptates aliquam, ducimus aperiam nobis tempore eaque 
-            architecto? 
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Nulla similique vitae ut hic saepe a dolorum perferendis, totam non aspernatur, 
-            praesentium architecto! Voluptates aliquam, ducimus aperiam nobis tempore eaque
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Nulla similique vitae ut hic saepe a dolorum perferendis, totam non aspernatur, 
-            praesentium architecto! Voluptates aliquam, ducimus aperiam nobis tempore eaque
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Nulla similique vitae ut hic saepe a dolorum perferendis, totam non aspernatur, 
-            praesentium architecto! Voluptates aliquam, ducimus aperiam nobis tempore eaque 
-            architecto? 
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Nulla similique vitae ut hic saepe a dolorum perferendis, totam non aspernatur, 
-            praesentium architecto! Voluptates aliquam, ducimus aperiam nobis tempore eaque
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Nulla similique vitae ut hic saepe a dolorum perferendis, totam non aspernatur, 
-            praesentium architecto! Voluptates aliquam, ducimus aperiam nobis tempore eaque
-        </p>
-        
+        <div id="bannerValeria" class="container mb-5">
+        <img src="Multimedia/valeria6.jpeg" class="rounded-circle p-1" alt="flayerValeria">
+        <img src="Multimedia/valeria5.jfif" class="rounded-circle p-1" alt="flayerValeria">
+        <img src="Multimedia/valeria3.jpeg" class="rounded-circle p-1" alt="flayerValeria">
+        </div>
+        <div id="bandCamp" >
+            <a href="https://vmanganoro.bandcamp.com/album/ep" id="bandButton" class="btn btn-primary btn-lg active col-3 m-5 font-title" role="button" aria-pressed="true">Escuchar Mas</a>
+        </div>
     </div>
 
     <section class=" container mt-5">
         <article class="row col-xl-12 mb-5 ">
-            <h3 class="col-12 biografia-titulo mb-3">
+            <h3 class="col-12 biografia-titulo m-3 colorTerciario">
                 MINERVA
             </h3>
-            <iframe class="row" width="400" height="300" src="https://www.youtube.com/embed/J-xyLeamMYw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="lyrics col-xl-6 font-medium ml-2">
+            <iframe class="row ml-1" width="400" height="300" src="https://www.youtube.com/embed/J-xyLeamMYw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <span class="lyrics col-xl-6 font-medium ml-3 colorSecundario">
 The Gods have abandoned me,
 now there is no hope.
 And she cast herself from the highest mountain in all of Greece.
@@ -146,15 +148,15 @@ of those I have more and more.
 
 The Gods have abandoned me,
 now there is no hope
-            </p>
+            </span>
         </article>
 
-        <article class="row col-xl-12 mb-5 mt-3">
-            <h4  class="col-12 biografia-titulo mb-3">
+        <article class="row col-xl-12 mb-5 mt-3 ">
+            <h4  class="col-12 biografia-titulo mb-3 colorTerciario">
                 PUMPKIN SONG
             </h4>
             <iframe width="400" height="300" src="https://www.youtube.com/embed/vEfkwuQTVoA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="lyrics col-xl-6 font-medium ml-2">
+            <span class="lyrics col-xl-6 font-medium ml-2 colorSecundario">
                 
                 Was a long time ago, longer now than it seems.
                 In a place that perhaps you've seen in your dreams.
@@ -216,23 +218,18 @@ now there is no hope
                 and scream like a banshee, make you jump out
                 of your skin!
                 This is Halloween, everyone scream,
-                So, please make way for a very special guy.
                 
-                Our man jack is King of the Pumpkin patch,
-                everyone hail to the Pumpkin King, now.
-                This is Halloween, this is Halloween,
-                Halloween! Halloween! Halloween! Halloween!
-            </p>
+            </span>
             
         </article>
     </section>
     
-    <footer class="container-fluid row mt-4 w-100 ml-0">
-        <h5 class="col-12 text-center mt-3 font-title">Contacto</h5>
-        <div class="col-1 offset-4"><a href=""><i class="facebook fab fa-facebook-square "></i></a></div>
-        <div class="col-1"><a href=""><i class="facebook fab fa-instagram-square"></i></a></div>
-        <div class="col-1"><a href=""><i class="facebook far fa-play-circle"></i></a></div>
-        <div class="col-1"> <a href=""><i class="facebook fas fa-desktop"></i></a></div>
+    <footer class="container-fluid row mt-4 w-100 ml-0 bgPrimario">
+        <h5 class="col-12 text-center mt-3 font-title colorSecundario">Contacto</h5>
+        <div class="col-2 col-sm-2 offset-3"><a href=""><i class="facebook fab fa-facebook-square "></i></a></div>
+        <div class="col-2 col-sm-2"><a href=""><i class="facebook fab fa-instagram-square"></i></a></div>
+        <div class="col-2 col-sm-2"><a href=""><i class="facebook far fa-play-circle"></i></a></div>
+        <div class="col-2 col-sm-2"> <a href=""><i class="facebook fas fa-desktop"></i></a></div>
     </footer>
     
     <script src="https://kit.fontawesome.com/4ab29f91bc.js" crossorigin="anonymous"></script>

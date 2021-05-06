@@ -45,34 +45,67 @@ body {
 
 /* line 6, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .font-medium a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-}
-
-/* line 13, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.font-large a {
-  text-decoration: none;
-  color: #fff;
   font-size: 25px;
 }
 
-/* line 19, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 10, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.navbar-brand {
+  font-size: 55px;
+}
+
+/* line 13, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .size-medium {
   font-size: 2rem;
 }
 
-/* line 22, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 16, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .size-small {
   font-size: 20px;
 }
 
-/* line 26, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.imagenes {
-  width: 80%;
+/* line 20, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.colorPrimario {
+  color: #512F42;
 }
 
-/* line 37, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 24, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.colorSecundario {
+  color: #D0B99A;
+}
+
+/* line 28, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.colorTerciario {
+  color: #A77F5B;
+}
+
+/* line 32, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.bgPrimario {
+  background-color: #512F42;
+}
+
+/* line 36, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#navColor {
+  background-color: #512F42;
+}
+
+/* line 38, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#navColor a {
+  color: #D0B99A;
+  background-color: #512F42;
+}
+
+/* line 44, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.dropdown-menu {
+  background-color: #000;
+}
+
+/* line 46, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.dropdown-menu a {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 58, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .banner {
   padding: 20px 80px;
   display: flex;
@@ -82,7 +115,7 @@ body {
   height: 450px;
 }
 
-/* line 46, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 67, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .imagenFondo1 {
   width: 33%;
   background-image: url("../Multimedia/valeria1.jpeg");
@@ -91,7 +124,7 @@ body {
   background-position: center;
 }
 
-/* line 50, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 71, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .imagenFondo2 {
   width: 33%;
   background-image: url("../Multimedia/valeria2.jfif");
@@ -100,7 +133,7 @@ body {
   background-position: center;
 }
 
-/* line 54, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 75, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .imagenFondo3 {
   width: 33%;
   background-image: url("../Multimedia/valeria5.jfif");
@@ -109,51 +142,136 @@ body {
   background-position: center;
 }
 
-/* line 58, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 79, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .galleria {
   display: flex;
   margin: auto;
   flex-wrap: wrap;
 }
 
-/* line 64, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 85, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .foto {
   width: 300px;
   height: 300px;
   margin: 20px;
-  border: #750303 solid 2px;
+  border: solid 3px #D0B99A;
   overflow: hidden;
 }
 
-/* line 72, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 93, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 footer {
-  background-color: #000;
   height: 200px;
   width: 100%;
-  border-top: solid 3px #800303;
+  border-top: solid 3px #D0B99A;
 }
 
-/* line 78, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 98, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 footer h5 {
   font-size: 50px;
 }
 
-/* line 82, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 102, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 footer .facebook {
-  color: #800303;
-  background-color: #000;
+  color: #D0B99A;
+  background-color: transparent;
   font-size: 60px;
 }
 
-/* line 88, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 108, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .lyrics {
   height: 600px;
   width: 800px;
 }
 
-/* line 93, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 113, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .borde {
-  border-bottom: solid 3px #800303;
+  border-bottom: solid 3px #D0B99A;
+}
+
+/* line 117, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#bannerValeria {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* line 124, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#bannerValeria img {
+  width: 30%;
+  height: 30vh;
+}
+
+/* line 129, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#bandCamp {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* line 136, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#bandCamp #bandButton {
+  height: 5vh;
+  color: #000;
+  background-color: #D0B99A;
+}
+
+/* line 144, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+/* line 152, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox .leftBox {
+  width: 30%;
+  height: 600px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 158, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox .leftBox img {
+  width: 80%;
+}
+
+/* line 163, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox .rightBox {
+  width: 30%;
+  height: 600px;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 169, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox .rightBox img {
+  width: 80%;
+}
+
+/* line 175, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox #formBox {
+  width: 40%;
+  height: 600px;
+  margin-top: 2rem;
+}
+
+/* line 179, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox #formBox h1 {
+  margin-bottom: 2rem;
+}
+
+/* line 182, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox #formBox p {
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=estilos.css.map */
