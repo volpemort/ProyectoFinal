@@ -42,10 +42,10 @@ body{
     
 }
 .dropdown-menu{
-    background-color: $bgNegro;
+    background-color: $primario;
     a{
     color: $blanco;
-    background-color: $bgNegro;
+    background-color: $primario;
 }
 }
 @mixin banner($imagen){
@@ -90,24 +90,15 @@ body{
     overflow: hidden;
     
 }
-footer{
-    height: 200px;
-    width: 100%;
-    border-top: $borde;
-
-    h5{
-        font-size: 50px;
-    }
-    
-    .facebook{
-        color: $secundario;
-        background-color: transparent;
-        font-size: 60px;
-    }
-}
 .lyrics{
     height: 600px;
     width: 800px;
+    overflow: auto;
+}
+@media  (max-width: 500px) {
+    .lyrics {
+        overflow: scroll;
+    }
 }
 
 .borde{
@@ -135,19 +126,21 @@ footer{
 
     #bandButton{
         height: 5vh;
+        width: 10em; 
+        font-size: 1em;
         color: $negro;
         background-color: $secundario;
-        
     }
 }
 
+/* Contacto Main */
+
 #contactBox{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
 
     .leftBox{
         width: 30%;
@@ -175,7 +168,9 @@ footer{
     #formBox{
         width: 40%;
         height: 600px;
+        padding: 10px;
         margin-top: 2rem;
+        border: $borde;
         h1{
             margin-bottom: 2rem;
         }
@@ -183,5 +178,45 @@ footer{
             margin-bottom: 2rem;
         }
     }
+}
+/* Contacto responsive REVISAR!!!  */
 
+@media  (max-width: 770px) {
+    .leftBox{
+        width: 0px;
+        height: 0px;
+        img{
+            display: none;
+        }
+    }
+    .rightBox{
+        width: 0px;
+        height: 0px;
+        img{
+            display: none;
+        }
+    }
+    #formBox{
+        width: 100%;
+    }
+
+}
+
+/* Footer Main */
+
+footer{
+    position:absolute;
+    height: 25vh;
+    width: 100%;
+    border-top: $borde;
+
+    h5{
+        font-size: 2.5em;
+    }
+    
+    .facebook{
+        color: $secundario;
+        background-color: transparent;
+        font-size: 2rem;
+    }
 }
