@@ -214,7 +214,7 @@ body {
   }
 }
 
-/* line 138, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 139, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #bandCamp {
   width: 100%;
   height: auto;
@@ -223,7 +223,7 @@ body {
   justify-content: center;
 }
 
-/* line 145, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 146, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #bandCamp #bandButton {
   width: 10em;
   font-size: 1em;
@@ -233,7 +233,7 @@ body {
 }
 
 /* Contacto Main */
-/* line 156, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 157, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #contactBox {
   height: 100vh;
   display: flex;
@@ -242,7 +242,7 @@ body {
   justify-content: center;
 }
 
-/* line 163, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 164, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #contactBox .leftBox {
   width: 30%;
   height: 80vh;
@@ -252,12 +252,12 @@ body {
   justify-content: center;
 }
 
-/* line 170, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 171, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #contactBox .leftBox img {
   width: 100%;
 }
 
-/* line 175, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 176, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #contactBox .rightBox {
   width: 30%;
   height: 80vh;
@@ -267,12 +267,12 @@ body {
   justify-content: center;
 }
 
-/* line 182, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 183, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #contactBox .rightBox img {
   width: 100%;
 }
 
-/* line 188, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 189, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #contactBox #formBox {
   height: 80vh;
   padding: 10px;
@@ -280,30 +280,30 @@ body {
   border: solid 3px #D0B99A;
 }
 
-/* line 193, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 194, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #contactBox #formBox h1 {
   margin-bottom: 2rem;
 }
 
-/* line 196, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 197, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #contactBox #formBox p {
   margin-bottom: 2rem;
 }
 
 /* Contacto responsive  */
 @media (max-width: 983px) {
-  /* line 206, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  /* line 207, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
   .leftBox img {
     display: none;
   }
-  /* line 211, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  /* line 212, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
   .rightBox img {
     display: none;
   }
 }
 
 /* Footer Main */
-/* line 220, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 221, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 footer {
   position: absolute;
   height: 25vh;
@@ -311,12 +311,12 @@ footer {
   border-top: solid 3px #D0B99A;
 }
 
-/* line 226, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 227, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 footer h5 {
   font-size: 2.5em;
 }
 
-/* line 230, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 231, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 footer .facebook {
   color: #D0B99A;
   background-color: transparent;
