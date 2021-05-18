@@ -92,9 +92,10 @@ body{
 }
 .lyrics{
     height: 600px;
-    width: 800px;
     overflow: auto;
+    text-align: justify;
 }
+
 @media  (max-width: 500px) {
     .lyrics {
         overflow: scroll;
@@ -105,18 +106,32 @@ body{
     border-bottom: $borde;
     
 }
+
+.padreBaner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #bannerValeria{
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 
-    img{
-        width: 30%;
-        height: 30vh;;
-    } 
+    .imgBox{
+        width: 300px;
+        height: 300px;
+        img{
+            width: 100%;
+            height: 300px;
+        }
+    }
 }
+@media  (max-width: 993px) {
+    .imgBox {
+        padding: 4px;
+    }
+}
+
 #bandCamp{
     width: 100%;
     height: auto;
@@ -125,49 +140,51 @@ body{
     justify-content: center;
 
     #bandButton{
-        height: 5vh;
         width: 10em; 
         font-size: 1em;
         color: $negro;
         background-color: $secundario;
+        border: transparent;
     }
 }
 
 /* Contacto Main */
 
 #contactBox{
-    width: 100%;
+    margin-bottom: 50px;
     height: 80vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: center;
 
     .leftBox{
         width: 30%;
-        height: 600px;
+        height: 80vh;
         margin-top: 2rem;
+        padding-right: 1rem;
         display: flex;
         justify-content: center;
         img{
-            width: 80%;
+            width: 100%;
         }
     }
 
     .rightBox{
         width: 30%;
-        height: 600px;
+        height: 80vh;
         margin-top: 2rem;
+        padding-left: 1rem;
         display: flex;
         justify-content: center;
         img{
-            width: 80%;
+            width: 100%;
             
         }
     }
 
     #formBox{
-        width: 40%;
-        height: 600px;
+        height: 80vh;
         padding: 10px;
         margin-top: 2rem;
         border: $borde;
@@ -181,25 +198,20 @@ body{
 }
 /* Contacto responsive REVISAR!!!  */
 
-@media  (max-width: 770px) {
+@media  (max-width: 983px) {
     .leftBox{
-        width: 0px;
-        height: 0px;
+        
         img{
             display: none;
         }
     }
     .rightBox{
-        width: 0px;
-        height: 0px;
+        
         img{
             display: none;
         }
     }
-    #formBox{
-        width: 100%;
-    }
-
+    
 }
 
 /* Footer Main */

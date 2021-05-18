@@ -161,38 +161,56 @@ body {
 /* line 93, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .lyrics {
   height: 600px;
-  width: 800px;
   overflow: auto;
+  text-align: justify;
 }
 
 @media (max-width: 500px) {
-  /* line 99, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  /* line 100, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
   .lyrics {
     overflow: scroll;
   }
 }
 
-/* line 104, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 105, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .borde {
   border-bottom: solid 3px #D0B99A;
 }
 
-/* line 108, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#bannerValeria {
-  width: 100%;
-  height: auto;
+/* line 110, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.padreBaner {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* line 115, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#bannerValeria img {
-  width: 30%;
-  height: 30vh;
+#bannerValeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 /* line 120, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#bannerValeria .imgBox {
+  width: 300px;
+  height: 300px;
+}
+
+/* line 123, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#bannerValeria .imgBox img {
+  width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 993px) {
+  /* line 130, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  .imgBox {
+    padding: 4px;
+  }
+}
+
+/* line 135, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #bandCamp {
   width: 100%;
   height: auto;
@@ -201,100 +219,88 @@ body {
   justify-content: center;
 }
 
-/* line 127, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 142, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #bandCamp #bandButton {
-  height: 5vh;
   width: 10em;
   font-size: 1em;
   color: #000;
   background-color: #D0B99A;
+  border: transparent;
 }
 
 /* Contacto Main */
-/* line 138, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 153, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #contactBox {
-  width: 100%;
+  margin-bottom: 50px;
   height: 80vh;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: center;
 }
 
-/* line 145, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 161, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #contactBox .leftBox {
   width: 30%;
-  height: 600px;
+  height: 80vh;
   margin-top: 2rem;
+  padding-right: 1rem;
   display: flex;
   justify-content: center;
-}
-
-/* line 151, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#contactBox .leftBox img {
-  width: 80%;
-}
-
-/* line 156, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#contactBox .rightBox {
-  width: 30%;
-  height: 600px;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-/* line 162, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#contactBox .rightBox img {
-  width: 80%;
 }
 
 /* line 168, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox .leftBox img {
+  width: 100%;
+}
+
+/* line 173, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox .rightBox {
+  width: 30%;
+  height: 80vh;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 180, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox .rightBox img {
+  width: 100%;
+}
+
+/* line 186, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #contactBox #formBox {
-  width: 40%;
-  height: 600px;
+  height: 80vh;
   padding: 10px;
   margin-top: 2rem;
   border: solid 3px #D0B99A;
 }
 
-/* line 174, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 191, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #contactBox #formBox h1 {
   margin-bottom: 2rem;
 }
 
-/* line 177, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 194, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #contactBox #formBox p {
   margin-bottom: 2rem;
 }
 
 /* Contacto responsive REVISAR!!!  */
-@media (max-width: 770px) {
-  /* line 185, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-  .leftBox {
-    width: 0px;
-    height: 0px;
-  }
-  /* line 188, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+@media (max-width: 983px) {
+  /* line 204, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
   .leftBox img {
     display: none;
   }
-  /* line 192, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-  .rightBox {
-    width: 0px;
-    height: 0px;
-  }
-  /* line 195, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  /* line 210, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
   .rightBox img {
     display: none;
-  }
-  /* line 199, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-  #formBox {
-    width: 100%;
   }
 }
 
 /* Footer Main */
-/* line 207, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 219, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 footer {
   position: absolute;
   height: 25vh;
@@ -302,12 +308,12 @@ footer {
   border-top: solid 3px #D0B99A;
 }
 
-/* line 213, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 225, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 footer h5 {
   font-size: 2.5em;
 }
 
-/* line 217, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 229, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 footer .facebook {
   color: #D0B99A;
   background-color: transparent;
