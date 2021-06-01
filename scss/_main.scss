@@ -1,36 +1,51 @@
-body{
-    background-color:$bgNegro;
-    color:$blanco ;
+// ---------------------- Estilado general de etiquetas --------------------
+
+body {
+    background-color: $bgNegro;
+    color: $blanco;
 }
-.font-medium {
-    a   {
-    font-size: 25px;
+
+main, section:not(.banner), article:not(.galleria article), footer, #bandCamp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+    iframe, p {
+        margin: 50px;
+    }
+    p {
+        // height: 600px;
+        text-align: justify;
     }
 }
-.navbar-brand{
+
+footer {
+    height: 200px;
+    border-top: $borde;
+    justify-content: space-evenly;
+    div {
+        a {
+            margin: 10px;
+            i {
+                font-size: 35px;
+                color: $secundario;
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+// ------------------------ Barra de navegación ------------------
+
+.navbar-brand {
     font-size: 55px;
-}
-.size-medium{
-    font-size: 2rem;
-}
-.size-small{
-    font-size: 20px;
-}
-
-.colorPrimario{
-    color: $primario;
-}
-
-.colorSecundario{
-    color: $secundario;
-}
-
-.colorTerciario{
-    color:$terciario;
-}
-
-.bgPrimario{
-    background-color: $primario;
 }
 
 #navColor{
@@ -41,196 +56,218 @@ body{
         }
     
 }
+
 .dropdown-menu{
     background-color: $primario;
-    a{
+    a {
     color: $blanco;
     background-color: $primario;
 }
 }
-@mixin banner($imagen){
-    width: 33%;
-    background-image: $imagen;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.banner{
-    margin-top: 20px;
-    margin-bottom: 40px;
-    padding: 0;
+
+// ---------------------- Alineación general ------------------
+
+.banner {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     width: 100%;
-    height: 500px;
-}
-
-    
-.imagenFondo1{
-    @include banner($imageBanner1)
-    
-}
-.imagenFondo2{
-    @include banner($imageBanner2)
-    
-}
-.imagenFondo3{
-    @include banner($imageBanner3)
-    
-}
-.galleria{
-    display: flex;
-    margin: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.foto{
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    border:$borde;
-    overflow: hidden;
-    
-}
-.lyrics{
-    height: 600px;
-    overflow:visible;
-    text-align: justify;
-}
-
-@media  (max-width: 500px) {
-    .lyrics {
-        overflow: scroll;
+    margin-bottom: 50px;
+    article {
+        width: 100%;
+        img {
+            width: 100%;
+            height: 460px;
+        }
     }
 }
 
-.borde{
-    border-bottom: $borde;
-    
-}
-
-.padreBaner{
+.padreBaner {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#bannerValeria{
+
+#bannerValeria {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-
-    .imgBox{
-        width: 300px;
-        height: 300px;
-        img{
-            width: 100%;
-            height: 300px;
-        }
-    }
-}
-@media  (max-width: 993px) {
+    align-items: center;
     .imgBox {
-        padding: 4px;
-        
-    }
-}
-
-#bandCamp{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    #bandButton{
-        width: 10em; 
-        font-size: 1em;
-        color: $negro;
-        background-color: $secundario;
-        border: transparent;
-    }
-}
-
-/* Contacto Main */
-
-#contactBox{
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-
-    .leftBox{
-        width: 30%;
-        height: 80vh;
-        margin-top: 2rem;
-        padding-right: 1rem;
-        display: flex;
-        justify-content: center;
-        img{
+        width: 250px;
+        margin: 15px;
+        img {
+            border-radius: 250px;
             width: 100%;
+            height: 250px;
         }
     }
+}
 
-    .rightBox{
-        width: 30%;
-        height: 80vh;
-        margin-top: 2rem;
-        padding-left: 1rem;
+.galleria {
+    article {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        img{
-            width: 100%;
-            
+        margin-bottom: 150px;
+        max-width: 1200px;
+        img {
+            width: 280px;
+            height: 280px;
+            margin: 20px;
+            border: $borde;
         }
     }
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
 
-    #formBox{
-        height: 80vh;
-        padding: 10px;
-        margin-top: 2rem;
-        border: $borde;
-        h1{
-            margin-bottom: 2rem;
-        }
-        p{
-            margin-bottom: 2rem;
-        }
-    }
-}
-/* Contacto responsive  */
+            overflow: hidden;
+            div {
+                img {
+                    width: 280px;
+                    height: 280px;
+                    &:hover {
+                        transform: scale(1.08);
+                        opacity: 0.8;
+                        transition: 0.3s;
+                    }
+                }
 
-@media  (max-width: 983px) {
-    .leftBox{
-        
-        img{
-            display: none;
+            }
         }
-    }
-    .rightBox{
-        img{
-            display: none;
-        }
-    }
-    
 }
 
-/* Footer Main */
-
-footer{
-    position:absolute;
-    height: 25vh;
-    width: 100%;
-    border-top: $borde;
-
-    h5{
-        font-size: 2.5em;
-    }
-    
-    .facebook{
+#bandButton {
+        font-size: 25px;
         color: $secundario;
         background-color: transparent;
-        font-size: 2rem;
+        border: 1px solid $secundario;
+        &:hover {
+            transform: scale(1.07);
+        }
+    }
+
+// ----------------------- Alineación sector contacto ----------------
+
+#contactBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+    width: 100%;
+    h1 {
+        margin-bottom: 60px;
+    }
+    div {
+        margin: 15px;
+    }
+    article {
+        width: 500px;
+        img {
+            height: 400px;
+        }
+    }
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+
+
+// ----------------------- Diseño tamaños y colores ----------------
+
+.size-small {
+    font-size: 20px;
+}
+
+.font-medium {
+    a   {
+    font-size: 25px;
     }
 }
+
+.size-medium {
+    font-size: 2rem;
+}
+
+.colorPrimario {
+    color: $primario;
+}
+
+.colorSecundario {
+    color: $secundario;
+}
+
+.colorTerciario {
+    color: $terciario;
+}
+
+.bgPrimario {
+    background-color: $primario;
+}
+
+// -------------------------- Media queries ------------------
+
+@media (min-width: 600px) and (max-width: 900px) {
+    article div {
+        flex-direction: column;
+        align-items: center;
+        iframe {
+            margin: 20px;
+        }
+    }
+
+    #contactBox {
+        flex-direction: column;
+
+        article img {
+            display: none;
+        }
+}
+}
+
+@media (max-width: 600px) {
+    article div {
+        flex-direction: column;
+        align-items: center;
+        iframe {
+            max-width: 300px;
+        }
+    }
+
+    #contactBox {
+        flex-direction: column;
+
+        article img {
+            display: none;
+        }
+}
+
+    .biografia-texto {
+        font-size: 25px;
+        text-align: justify;
+        margin: 15px;
+    }
+
+        .imgBox {
+            display: flex;
+            flex-direction: column;
+            margin: 3px;
+            align-items: center;
+            img {
+                max-width: 200px;
+                max-height: 200px;
+            }
+        }
+
+        #bandCamp {
+            border-bottom: none;
+          }
+
+}
+
+
+
+
+

@@ -34,293 +34,318 @@
 /* line 23, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_fuentes.scss */
 .biografia-texto {
   text-align: center;
-  font-family: "Redressed", sans-serif;
+  font-family: "Newsreader", serif;
   font-weight: 400;
 }
 
-/* line 1, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 3, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 body {
   background-color: #000;
   color: #fff;
 }
 
-/* line 6, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.font-medium a {
-  font-size: 25px;
+/* line 8, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+main, section:not(.banner), article:not(.galleria article), footer, #bandCamp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* line 10, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 14, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+article div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+/* line 18, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+article div iframe, article div p {
+  margin: 50px;
+}
+
+/* line 21, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+article div p {
+  text-align: justify;
+}
+
+/* line 27, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+footer {
+  height: 200px;
+  border-top: solid 3px #D0B99A;
+  justify-content: space-evenly;
+}
+
+/* line 32, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+footer div a {
+  margin: 10px;
+}
+
+/* line 34, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+footer div a i {
+  font-size: 35px;
+  color: #D0B99A;
+}
+
+/* line 37, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+footer div a i:hover {
+  transform: scale(1.2);
+}
+
+/* line 47, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .navbar-brand {
   font-size: 55px;
 }
 
-/* line 13, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.size-medium {
-  font-size: 2rem;
-}
-
-/* line 16, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.size-small {
-  font-size: 20px;
-}
-
-/* line 20, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.colorPrimario {
-  color: #512F42;
-}
-
-/* line 24, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.colorSecundario {
-  color: #D0B99A;
-}
-
-/* line 28, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.colorTerciario {
-  color: #A77F5B;
-}
-
-/* line 32, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.bgPrimario {
-  background-color: #512F42;
-}
-
-/* line 36, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 51, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #navColor {
   background-color: #512F42;
 }
 
-/* line 38, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 53, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #navColor a {
   color: #D0B99A;
   background-color: #512F42;
 }
 
-/* line 44, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 60, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .dropdown-menu {
   background-color: #512F42;
 }
 
-/* line 46, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 62, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .dropdown-menu a {
   color: #fff;
   background-color: #512F42;
 }
 
-/* line 58, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 70, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .banner {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  padding: 0;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   width: 100%;
-  height: 500px;
+  margin-bottom: 50px;
 }
 
-/* line 70, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.imagenFondo1 {
-  width: 33%;
-  background-image: url("../Multimedia/valeria1.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+/* line 75, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.banner article {
+  width: 100%;
 }
 
-/* line 74, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.imagenFondo2 {
-  width: 33%;
-  background-image: url("../Multimedia/valeria2.jfif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+/* line 77, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.banner article img {
+  width: 100%;
+  height: 460px;
 }
 
-/* line 78, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.imagenFondo3 {
-  width: 33%;
-  background-image: url("../Multimedia/valeria5.jfif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/* line 82, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.galleria {
-  display: flex;
-  margin: auto;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* line 88, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.foto {
-  width: 300px;
-  height: 300px;
-  margin: 20px;
-  border: solid 3px #D0B99A;
-  overflow: hidden;
-}
-
-/* line 96, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.lyrics {
-  height: 600px;
-  overflow: visible;
-  text-align: justify;
-}
-
-@media (max-width: 500px) {
-  /* line 103, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-  .lyrics {
-    overflow: scroll;
-  }
-}
-
-/* line 108, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-.borde {
-  border-bottom: solid 3px #D0B99A;
-}
-
-/* line 113, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 84, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 .padreBaner {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* line 118, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 90, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #bannerValeria {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
 }
 
-/* line 123, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 95, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #bannerValeria .imgBox {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  margin: 15px;
 }
 
-/* line 126, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+/* line 98, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 #bannerValeria .imgBox img {
+  border-radius: 250px;
   width: 100%;
-  height: 300px;
+  height: 250px;
 }
 
-@media (max-width: 993px) {
-  /* line 133, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-  .imgBox {
-    padding: 4px;
-  }
-}
-
-/* line 139, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#bandCamp {
-  width: 100%;
-  height: auto;
+/* line 107, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.galleria article {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 150px;
+  max-width: 1200px;
 }
 
-/* line 146, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#bandCamp #bandButton {
-  width: 10em;
-  font-size: 1em;
-  color: #000;
-  background-color: #D0B99A;
-  border: transparent;
-}
-
-/* Contacto Main */
-/* line 157, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#contactBox {
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-
-/* line 164, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#contactBox .leftBox {
-  width: 30%;
-  height: 80vh;
-  margin-top: 2rem;
-  padding-right: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
-/* line 171, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#contactBox .leftBox img {
-  width: 100%;
-}
-
-/* line 176, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#contactBox .rightBox {
-  width: 30%;
-  height: 80vh;
-  margin-top: 2rem;
-  padding-left: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
-/* line 183, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#contactBox .rightBox img {
-  width: 100%;
-}
-
-/* line 189, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#contactBox #formBox {
-  height: 80vh;
-  padding: 10px;
-  margin-top: 2rem;
+/* line 113, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.galleria article img {
+  width: 280px;
+  height: 280px;
+  margin: 20px;
   border: solid 3px #D0B99A;
 }
 
-/* line 194, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#contactBox #formBox h1 {
-  margin-bottom: 2rem;
+/* line 120, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.galleria div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  overflow: hidden;
 }
 
-/* line 197, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-#contactBox #formBox p {
-  margin-bottom: 2rem;
+/* line 128, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.galleria div div img {
+  width: 280px;
+  height: 280px;
 }
 
-/* Contacto responsive  */
-@media (max-width: 983px) {
-  /* line 207, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-  .leftBox img {
-    display: none;
-  }
-  /* line 212, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-  .rightBox img {
-    display: none;
-  }
+/* line 131, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.galleria div div img:hover {
+  transform: scale(1.08);
+  opacity: 0.8;
+  transition: 0.3s;
 }
 
-/* Footer Main */
-/* line 221, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-footer {
-  position: absolute;
-  height: 25vh;
-  width: 100%;
-  border-top: solid 3px #D0B99A;
-}
-
-/* line 227, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-footer h5 {
-  font-size: 2.5em;
-}
-
-/* line 231, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
-footer .facebook {
+/* line 142, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#bandButton {
+  font-size: 25px;
   color: #D0B99A;
   background-color: transparent;
+  border: 1px solid #D0B99A;
+}
+
+/* line 147, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#bandButton:hover {
+  transform: scale(1.07);
+}
+
+/* line 154, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 15px;
+  width: 100%;
+}
+
+/* line 160, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox h1 {
+  margin-bottom: 60px;
+}
+
+/* line 163, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox div {
+  margin: 15px;
+}
+
+/* line 166, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox article {
+  width: 500px;
+}
+
+/* line 168, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox article img {
+  height: 400px;
+}
+
+/* line 172, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+#contactBox p {
+  margin-bottom: 2rem;
+}
+
+/* line 180, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.size-small {
+  font-size: 20px;
+}
+
+/* line 185, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.font-medium a {
+  font-size: 25px;
+}
+
+/* line 190, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.size-medium {
   font-size: 2rem;
+}
+
+/* line 194, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.colorPrimario {
+  color: #512F42;
+}
+
+/* line 198, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.colorSecundario {
+  color: #D0B99A;
+}
+
+/* line 202, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.colorTerciario {
+  color: #A77F5B;
+}
+
+/* line 206, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+.bgPrimario {
+  background-color: #512F42;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  /* line 213, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  article div {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 216, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  article div iframe {
+    margin: 20px;
+  }
+  /* line 221, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  #contactBox {
+    flex-direction: column;
+  }
+  /* line 224, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  #contactBox article img {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 231, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  article div {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 234, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  article div iframe {
+    max-width: 300px;
+  }
+  /* line 239, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  #contactBox {
+    flex-direction: column;
+  }
+  /* line 242, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  #contactBox article img {
+    display: none;
+  }
+  /* line 247, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  .biografia-texto {
+    font-size: 25px;
+    text-align: justify;
+    margin: 15px;
+  }
+  /* line 253, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  .imgBox {
+    display: flex;
+    flex-direction: column;
+    margin: 3px;
+    align-items: center;
+  }
+  /* line 258, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  .imgBox img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  /* line 264, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
+  #bandCamp {
+    border-bottom: none;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
