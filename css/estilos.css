@@ -70,8 +70,7 @@ article div p {
 
 /* line 27, ../../../Nueva carpeta/Proyecto final/Proyecto/scss/_main.scss */
 footer {
-  height: 200px;
-  border-top: solid 3px #D0B99A;
+  height: 300px;
   justify-content: space-evenly;
 }
 
